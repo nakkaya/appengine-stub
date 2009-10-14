@@ -13,8 +13,8 @@
   <property name="sdk.file" value="sdk.zip"/>
   <property name="compojure.file" value="lib.zip"/>
 
-  <property name="compojure.url" value="http://cloud.github.com/downloads/nakkaya/appengine-stub/${sdk.file}"/>
-  <property name="sdk.url" value="http://cloud.github.com/downloads/nakkaya/appengine-stub/${compojure.file}"/>
+  <property name="compojure.url" value="http://cloud.github.com/downloads/nakkaya/appengine-stub/${compojure.file}"/>
+  <property name="sdk.url" value="http://cloud.github.com/downloads/nakkaya/appengine-stub/${sdk.file}"/>
   
   <import file="${sdk.dir}/config/user/ant-macros.xml" optional="true"/>
   
@@ -78,7 +78,7 @@
   <unzip src="${compojure.file}" dest="./war/WEB-INF/"/>
 
   <delete file="${compojure.file}"/>
-  <delete dir="__MACOSX"/>
+  <delete dir="./war/WEB-INF/__MACOSX"/>
 
 </target>
 
