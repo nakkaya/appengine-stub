@@ -16,7 +16,7 @@
   <property name="compojure.url" value="http://cloud.github.com/downloads/nakkaya/appengine-stub/${sdk.file}"/>
   <property name="sdk.url" value="http://cloud.github.com/downloads/nakkaya/appengine-stub/${compojure.file}"/>
   
-  <import file="${sdk.dir}/config/user/ant-macros.xml" optional="false"/>
+  <import file="${sdk.dir}/config/user/ant-macros.xml" optional="true"/>
   
   <path id="project.classpath">
     <pathelement path="${classes.dir}" />
