@@ -86,7 +86,7 @@
     <available file="README.markdown"  property="do.setup"/>
 </target>
 
-<target name="setup" depends="check-setup" if="do.setup">
+<target name="setup" depends="check-setup,deps" if="do.setup">
 
   <echo message="Creating Template"/>
 
