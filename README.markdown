@@ -18,6 +18,12 @@ unzip them in to their respective folders.
 After setup you have working compojure application that prints Hello,
 World. You can check it by running the devserver task.
 
+When you first deploy you need to run,
+ 
+    ./sdk/bin/appcfg.sh 
+
+and setup your credentials.
+
 ### Tasks
 
  - devserver - Runs the server for local testing.
